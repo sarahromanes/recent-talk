@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My (long) journey with R</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Sarah Romanes" />
+    <meta name="date" content="2018-06-20" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/rladies.css" rel="stylesheet" />
+    <link href="libs/remark-css/rladies-fonts.css" rel="stylesheet" />
+    <link href="libs/font-awesome/css/fontawesome-all.min.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/5235085b15.js"></script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# My (long) journey with R
+## A lightning talk for the R-Ladies Sydney Group
+### Sarah Romanes
+### 20 June 2018
+
+---
+
+
+
+
+class: inverse, center, middle
+
+# Keep in touch
+
+&lt;a href="mailto:sarah.romanes@hotmail.com"&gt;&lt;i class="fa fa-paper-plane fa-fw"&gt;&lt;/i&gt;&amp;nbsp; sarah.romanes@sydney.edu.au&lt;/a&gt;&lt;br&gt;
+&lt;a href="http://twitter.com/sarah_romanes"&gt;&lt;i class="fa fa-twitter fa-fw"&gt;&lt;/i&gt;&amp;nbsp; @sarah_romanes&lt;/a&gt;&lt;br&gt;
+&lt;a href="http://github.com/sarahromanes"&gt;&lt;i class="fa fa-github fa-fw"&gt;&lt;/i&gt;&amp;nbsp; @sarahromanes&lt;/a&gt;&lt;br&gt;
+&lt;a href="http://www.maths.usyd.edu.au"&gt;&lt;i class="fa fa-map-marker fa-fw"&gt;&lt;/i&gt;&amp;nbsp; School of Mathematics and Statistics @ The University of Sydney&lt;/a&gt;
+---
+
+# About Me
+
+* 3rd year PhD student at the University of Sydney.
+* Lectures and tutors first year Statistics (also involves teaching R!)
+* My research revolves around developing statistical machine learning methods for high dimensional data.
+
+* My undergrad is a BSc (Adv) degree, in which I majored in Mathematics and Statistics and graduated Hons I (Mathematical Statistics). It was in my first year of uni that I was introduced to R!
+
+---
+
+# Throwback - 2012
+
+My journey with **R** began back in 2012 (nearly 6 years ago!) in first year stats. **R** was introduced as a glorified calculator.
+
+&lt;img src="images/LinuxCLgrey.png" height="400"&gt;
+
+---
+
+class: inverse, center, middle
+
+&lt;iframe src="https://giphy.com/embed/26mfh0x8OswzgxNDO" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;&lt;p&gt;&lt;a href="https://giphy.com/gifs/peteandpete-season-2-episode-6-26mfh0x8OswzgxNDO"&gt;via GIPHY&lt;/a&gt;&lt;/p&gt;
+---
+
+
+# A typical first year question
+
+$$\text{Suppose } X \sim \mathcal{N}(0,1). \text{What is } P(X \leq 0.8)? $$
+
+![](test_files/figure-html/cars-1.svg)&lt;!-- --&gt;
+
+Answer:
+
+
+```r
+pnorm(0.8)
+```
+
+```
+## [1] 0.7881446
+```
+
+---
+
+
+class: center, middle
+
+# Along came sweave in second year... (2013)
+
+
+&lt;img src="images/R2ndyear.png" height="400"&gt;
+
+---
+# ... with its horrible syntax
+
+```r
+\documentclass{article}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+\begin{center}
+{\large \textbf{ STAT2011 Statistical Models} }\\
+{\footnotesize\texttt{sydney.edu.au/science/maths/stat2011}}
+\end{center}
+\vspace{-1mm}
+\begin{tabular*}{1.0\linewidth}{@{\extracolsep{\fill}}lr@{}}
+  \hline\noalign{\smallskip}
+Semester 1, 2013 &amp; Username: \texttt{\Sexpr{Sys.getenv("USER")}} \\ %Michael Stewart\\
+\hline
+\end{tabular*}
+\begin{center}
+ \textbf{Computer Exercise Week 3}\\Due by the end of your week 4 session\\
+ \textbf{Last compiled}: \today
+\end{center}
+```
+
+---
+
+# What I was formally taught during my undergraduate degree in R (2012 - 2015)
+
+<i class="fas  fa-check fa-2x "></i> Statistical modelling techniques
+
+<i class="fas  fa-check fa-2x "></i> ... and through that, baseR (by experience).
+
+<i class="fas  fa-check fa-2x "></i> Basic report making via Sweave implementation
+
+***
+
+**Essentially - a strong focus on Statistics, and less focus on Data Science! R was a means to the end.**
+
+
+---
+
+# What I was NOT formally taught during my undergraduate degree
+
+<i class="fas  fa-times fa-2x "></i> tidyverse, eg. `ggplot2`, `dplyr`, `purrr`  packages
+
+<i class="fas  fa-times fa-2x "></i> rmarkdown/ xaringan slides/ blogdown
+
+<i class="fas  fa-times fa-2x "></i> advanced R topics such as functions, object orientated programming, good programming practice
+
+<i class="fas  fa-times fa-2x "></i> package development 
+
+<i class="fas  fa-times fa-2x "></i> git/ github/ version control
+
+***
+
+**I have had to learn (and not yet master) a lot of these things on my own accord during my PhD.**
+
+---
+
+class: inverse, center, middle
+
+# So, why am I telling you all of this?
+
+---
+
+class: center
+
+## 1) Everyone still has something to learn in R, even if we have been using it for a long time
+
+Especially those of us who learnt R 'formally'! For example, a lot of us are learning the `tidyverse` along side you! If you ask us for how to do things, we might give you a long baseR solution...
+
+
+&lt;img src="images/harder.jpg" height="300"&gt;
+
+
+---
+
+class: center, middle
+
+## 2) Learning these things takes time and patience, and life does get in the way!
+
+&lt;center&gt;
+
+&lt;img src="images/tenor.gif" height="400"&gt;
+
+&lt;/center&gt;
+---
+
+# My tips on learning R
+
+* My best improvements in R came from having clear motivations for WHY I was learning new skills
+  + I learned `ggplot2` to make better data vis for presentations/publications/ packages
+  + I learned how to develop packages to complement my research and to also improve workflow
+  + I learned `xaringan` to make these slides today!
+  + I am *slowly* learning `dplyr` to speed up my data vis steps! (Still hasn't made a way to my modelling yet though... not sure it ever will)
+
+* Learn from examples! Eg, this presentation was based off Apres Hills R Ladies talk about blogdown! Work smart, not hard.
+
+* Having a mentor is extremely useful. I found my coding to improve drastically after my honours year as I had great guidance from an expert (my supervisor).
+
+
+---
+
+# Short plug - my packages!
+
+
+
+
+
+---
+
+
+class: center, middle
+
+# Thanks!
+
+To Yihui and RStudio for the [**blogdown** package](https://cran.r-project.org/web/packages/blogdown/index.html)
+
+To Yihui and Amber for inviting me to be a co-author on the [**blogdown** book](https://bookdown.org/yihui/blogdown/)
+
+To the [`rbind`](https://github.com/rbind) group for awesome support
+
+To the R-Ladies PDX organizers, Augustina and Deeksha, for allowing me to use them as a guinea pig- join the [R-Ladies PDX meetup group](https://www.meetup.com/R-Ladies-PDX/)!
+
+Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
