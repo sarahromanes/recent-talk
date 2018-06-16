@@ -175,35 +175,22 @@ class: center, middle
 * My best improvements in R came from having clear motivations for WHY I was learning new skills
   + I learned `ggplot2` to make better data vis for presentations/publications/ packages
   + I learned how to develop packages to complement my research and to also improve workflow
-  + I learned `xaringan` to make these slides today!
-  + I am *slowly* learning `dplyr` to speed up my data vis steps! (Still hasn't made a way to my modelling yet though... not sure it ever will)
 
-* Learn from examples! Eg, this presentation was based off Apres Hills R Ladies talk about blogdown! Work smart, not hard.
+* Learn from examples! Eg, this presentation was based off Alison Hill's R Ladies talk about blogdown! Work smart, not hard.
 
 * Having a mentor is extremely useful. I found my coding to improve drastically after my honours year as I had great guidance from an expert (my supervisor).
 
 
 ---
 
-# Short plug - my packages!
-
-
-
-
-
----
 
 
 class: center, middle
 
 # Thanks!
 
-To Yihui and RStudio for the [**blogdown** package](https://cran.r-project.org/web/packages/blogdown/index.html)
+To R Ladies Sydney for allowing me to give this talk today!
 
-To Yihui and Amber for inviting me to be a co-author on the [**blogdown** book](https://bookdown.org/yihui/blogdown/)
-
-To the [`rbind`](https://github.com/rbind) group for awesome support
-
-To the R-Ladies PDX organizers, Augustina and Deeksha, for allowing me to use them as a guinea pig- join the [R-Ladies PDX meetup group](https://www.meetup.com/R-Ladies-PDX/)!
+To Alison Hill [**@apreshill**](https://twitter.com/apreshill) for the R ladies template I base this presentation off today!
 
 Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
