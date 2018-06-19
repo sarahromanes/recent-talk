@@ -36,7 +36,9 @@ class: inverse, center, middle
 * Lectures and tutors first year Statistics (also involves teaching R!)
 * My research revolves around developing statistical machine learning methods for high dimensional data.
 
-* My undergrad is a BSc (Adv) degree, in which I majored in Mathematics and Statistics and graduated Hons I (Mathematical Statistics). It was in my first year of uni that I was introduced to R!
+
+<img src="images/about-me.png" height="220" width="700">
+
 
 ---
 
@@ -174,7 +176,6 @@ class: center, middle
 
 * My best improvements in R came from having clear motivations for WHY I was learning new skills
   + I learned `ggplot2` to make better data vis for presentations/publications/ packages
-  + I learned how to develop packages to complement my research and to also improve workflow
 
 * Learn from examples! Eg, this presentation was based off Alison Hill's R Ladies talk about blogdown! Work smart, not hard.
 
